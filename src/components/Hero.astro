@@ -1,21 +1,27 @@
 ---
-const imagenPersAlt = "Ibrahim Thiam";
 import Availability from "../components/Availability.astro";
+import Contact from "../components/Contact.astro";
 ---
 
-<div class="flex  flex-col justify-center mt-15 border-2 p-8 rounded-xl">
+<div class="flex  flex-col justify-center mt-15 max-w-80">
 
-    <div class="flex flex-row justify-center gap-8 py-3 items-center text-xl backdrop-grayscale "> 
-        
-        <h2> Hi, I'm Ibra! </h2>
+	<div class="flex flex-row justify-center gap-8 py-3 items-center text-xl "> 
 
-        <a href="https://linkedin.com/in/Ibraadev" target="_blank">
-            <div>
-		    <Availability> • Disponibilidad inmediata</Availability>
-            </div>
-        </a>
-    </div>
+		<h2> Hi, I'm Ibra! </h2>
 
-    <h1 class=" italic font-bold text-6xl mt-6"> Full Stack <br> Web Developer</h1>
+		<a href="https://linkedin.com/in/Ibraadev" target="_blank">
+			<div>
+				<Availability> • Available immediately </Availability>
+			</div>
+		</a>
+	</div>
+
+	<h1 class=" italic font-bold text-6xl mt-6"> Full Stack <br> Web Developer</h1>
+
+	<Contact /> 
+
+		<p> Currently, I am studying web development at IES Zaidín Vergeles. I am deeply passionate about open-source technologies, digital minimalism, and the Linux environment. I thrive on optimizing workflows and finding ways to make processes more efficient. My goal is to create clean, functional, and intuitive solutions that contribute to a seamless digital experience. </p>
+
+
 
 </div>

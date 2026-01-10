@@ -15,7 +15,7 @@ const { description, title } = Astro.props
 	<head>
 
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="generator" content={Astro.generator} />
 		<title>Ibradev</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@ const { description, title } = Astro.props
 
 	</head>
 
-	<body>
+	<body class = "bg-radial-[at_25%_25%] from-black to-red-950 to-75% ">
 		
 		<slot />
 
@@ -35,24 +35,25 @@ const { description, title } = Astro.props
 
 		:root {
 			
-			color-scheme: light dark;
+			color-scheme: dark;
 		
 		}
 
 		html {
 	
 			font-family: Smooch Sans;
-			font-weight: 700;
+			font-weight: 900;
 			scroll-behavior: smooth;
 		
 		}
 
 		body {
-			
+
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			min-height: 100vh;
+			min-width: 100vh;
 			
 		}
 

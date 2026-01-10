@@ -1,15 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import Tec from "../components/Tec.astro";
+import Skills from "../components/Skills.astro";
+import Experience from "../components/Experience.astro"
+import Competencies from "../components/Competencies.astro"
 import "../styles/global.css";
 ---
 
-<Layout>
+<Layout >
 	<Header />
 	<Hero /> 
-	<Tec />	
-	<Footer />
+	<section class="flex flex-row justify-center mt-[10vh] gap-[15vw] "> 
+		<Competencies />
+		<Tec />
+		<Skills /> 
+	</section>
+	<Experience />
 </Layout>
